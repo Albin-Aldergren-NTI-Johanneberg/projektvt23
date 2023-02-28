@@ -34,28 +34,35 @@ header h1{
 nav{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 nav ul {
     display: flex;
+    padding: 0px;
 }
 
 nav ul li {
     list-style: none;
-    margin: 1rem 0.5rem 1rem 0.5rem;
+    margin: 1rem 0.5rem 1rem 0.5rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav ul li a{
     color:white;
     text-decoration: none;
 }
-
+ 
 #s1{
   display: flex;
     background-color:midnightblue ;
-   height: 500px;
+   height: 70vh;
+   width: 50vh;
+   margin-top: 30vh;
     border: 2px #000;
-
+    justify-content: center;
 }
 
 footer{
@@ -126,9 +133,6 @@ footer{
     nav ul li:hover {
         background-color: midnightblue;
     }
-
-
-
 }
 
    
