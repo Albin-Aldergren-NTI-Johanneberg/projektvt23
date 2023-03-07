@@ -6,13 +6,16 @@ body{
 #wrapper{
 
     width: 100%;
-    height: 4000px;
+
     margin: auto;
     display: grid;
-    grid-template-areas: 'hd'
+    grid-template-areas: 
+    'hd'
     'main'
     's1'
+    's2''s3'
     'ft';
+    
 
 
 }
@@ -20,11 +23,11 @@ header{
     grid-area: hd;
     background-color:midnightblue;
     color: white;
-    border-bottom: 5px solid black;
-    position: fixed;
+    border-bottom: 0.5vh solid black;
     top: 0;
     left: 0;
     width: 100%;
+    height: 20vh;
 }
 
 header h1{
@@ -54,15 +57,32 @@ nav ul li a{
     color:white;
     text-decoration: none;
 }
- 
+
 #s1{
-  display: flex;
+  grid-area: s1;
+    display: flex;
     background-color:midnightblue ;
    height: 70vh;
-   width: 50vh;
-   margin-top: 30vh;
-    border: 2px #000;
-    justify-content: center;
+   width: 100%;
+ justify-content: center;
+}
+
+#s2{
+    grid-area: s2;
+    display: flex;
+    background-color:midnightblue ;
+   height: 70vh;
+   width: 50%;
+ justify-content: center;
+}
+
+#s3{
+    grid-area: s3;
+    display: flex;
+    background-color:midnightblue ;
+   height: 70vh;
+   width: 50%;
+ justify-content: center;
 }
 
 footer{
@@ -70,7 +90,7 @@ footer{
     grid-area: ft;
     background-color: #f27373;
     height: fit-content;
-    margin-top:5000px ;
+height: 15vh;
    
 }
 
@@ -85,7 +105,7 @@ footer{
         display: block;
     }
 
-    #hamborgir{
+    #smolbox{
         /* border: 1px solid #000; */
         height: 1.5rem;
         width: 2.2rem ;
@@ -96,7 +116,7 @@ footer{
         
     }    
 
-    #hamborgir div {
+    #smolbox div {
         border: 2px solid #000;
         margin: 0.4em;
         border-color: white;
