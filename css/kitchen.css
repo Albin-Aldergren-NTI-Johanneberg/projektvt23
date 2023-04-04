@@ -1,0 +1,213 @@
+/* Denna fil skall innehålla din CSS kod */
+body {
+    margin: 0;
+    background-color:darkgreen;
+}
+
+#kitchenwrapper{
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    background-color: black;
+}
+
+header{
+    grid-area: khd;
+    margin:0px;
+    background-color:darkgreen;
+    color:white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20vh;
+    border-bottom: 3px solid  white;
+}
+
+header h1{
+    text-align:center;
+    padding-top: 4vh;
+    margin: 0px;
+
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    padding: 0px;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 1rem 0.5rem 1rem 0.5rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration: none;
+}
+
+#kitchenlayout{
+    justify-content: center;
+    display: grid;
+    grid-template-areas: 'ks4 ks1 ks1 ks5'
+    'ks4 ks2 ks3 ks5';
+    grid-template-columns:5% 45% 45% 5%;
+    grid-template-rows: 33vh 80vh;
+}
+
+#ks1{
+grid-area: ks1;
+background-color: darkgreen;
+display: flex;
+flex-direction: column;
+align-items: center;
+border: 3px solid  white;
+ color:white;
+ border-radius: 20px 20px 20px 20px;
+ margin-top: 5vh;
+ margin-left: 5vh;
+ margin-right: 5vh;
+ margin-bottom: 5vh;
+ text-align: center;
+}
+
+#kinfo{
+    margin: 1vh;
+}
+
+#ks2{
+    grid-area: ks2;
+    display: flex;
+ justify-content: center;
+ background-color:darkgreen;
+ border: 3px solid  white;
+ margin: none;
+ padding: none;
+ color:white;
+ margin-bottom: 5vh ;
+ margin-left: 5vh;
+ margin-right:2.5vh;
+ border-radius: 20px 20px 20px 20px ;
+}
+
+#ks3{
+    grid-area: ks3;
+    display: flex;
+ justify-content: center;
+ background-color:darkgreen;
+ border: 3px solid  white;
+ color:white;
+ margin-bottom: 5vh ;
+ margin-right: 5vh;
+ margin-left:2.5vh;
+ border-radius: 20px 20px 20px 20px ;
+}
+
+
+footer{
+    display: flex;
+    grid-area: kft;
+    background-color:darkgreen;
+    color: white;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   border-top: 3px solid  white;;
+}
+
+@media screen and (max-width:600px) {
+    body { 
+        background-color:darkgreen;
+    }
+
+    header{
+        position:  relative ;
+        display: block;
+        
+    }
+
+    #kitchensmolbox{
+        /* border: 1px solid #000; */
+        height: 1.5rem;
+        width: 2.2rem ;
+        position: absolute;
+        top: 0.7rem;
+        right:0.7rem;
+      
+        
+    }    
+
+    #kitchensmolbox div {
+        border: 2px solid ;
+        margin: 0.4em;
+        border-color: white;
+        justify-content:center;
+        
+    }
+
+    #kitchenlayout{
+        justify-content: center;
+        display: grid;
+        grid-template-areas: 'ks4 ks1 ks1 ks5'
+        'ks4 ks2 ks3 ks5';
+        grid-template-columns:5% 45% 45% 5%;
+        grid-template-rows: 40vh 50vh;
+        
+    }
+
+    #produkt{
+       font-size: 2vh;
+    }
+
+    #cooks{
+        font-size: 2vh;
+    }
+
+    #facilities{
+        font-size: 2vh;
+    }
+    
+
+    nav{
+        justify-content: center;
+        max-height: 0;
+        overflow:hidden;
+        background-color:darkgreen;
+        border-bottom: 3px solid  white;
+    }
+
+    nav.active{
+        max-height:1000px;
+        transition: max-height;
+    }
+
+    nav ul{
+    display:block;
+    padding:0;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    nav ul li a {
+        width: 100%;
+        height: 100%;
+        color:white;
+    }
+    
+    nav ul li:hover {
+        background-color:darkgreen;
+    }
+}
+
+   
