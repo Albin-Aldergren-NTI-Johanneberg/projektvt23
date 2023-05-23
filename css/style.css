@@ -241,8 +241,10 @@ footer{
     border-bottom: 3px solid  white;
 }
 
-#kitchenheader #kh1{
-    text-align:center;
+ #kh1{
+    justify-content: center;
+    color: white;
+    align-items: center;
     padding-top: 4vh;
 }
 
@@ -252,22 +254,24 @@ footer{
     align-items: center;
 }
 
-#kitchennav #kul {
+#kul{
     display: flex;
     padding: 0px;
+    justify-content: center;
 }
 
-#kitchennav #kul .kli {
+#kul li{
     list-style: none;
     margin: 1rem 0.5rem 1rem 0.5rem; 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: end;
+    
 }
 
-#kitchennav #kul .kli #ka{
+#kul li a{
     color:white;
     text-decoration: none;
+ 
 }
 
 #kitchenlayout{
